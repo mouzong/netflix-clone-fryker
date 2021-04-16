@@ -5,9 +5,9 @@ import { Text } from "../../components/Themed";
 
 interface HomeCategoryProps {
   category: {
-    Imageid: string;
+    id: string;
     title: string;
-    movies: { id: string; posters: string };
+    movies: { id: string; poster: string }[];
   };
 }
 
@@ -27,6 +27,7 @@ const HomeCategory = (props: HomeCategoryProps) => {
           />
         )}
         horizontal
+        showsHorizontalScrollIndicator={false}
       />
     </>
   );
